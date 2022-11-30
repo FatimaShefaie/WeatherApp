@@ -43,6 +43,9 @@ class TomorrowFragment : Fragment() {
         val tomorrowScreen = arrayListOf<DailyScreenItems>()
         tomorrowScreen.add(
             DailyScreenItems.Title(OffsetDateTime.now(), "Marino", "Roma","Tomorrow"))
+        tomorrowScreen.add(
+            DailyScreenItems.CardForecast(23.3,34.3,23.4,12.4,45,34.5)
+        )
         tomorrowScreen.addAll(
             hourlyForecastList.map { DailyScreenItems.HourlyForecast(it) }
         )

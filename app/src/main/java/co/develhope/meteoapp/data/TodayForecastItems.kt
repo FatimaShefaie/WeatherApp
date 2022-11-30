@@ -8,7 +8,7 @@ object TodayForecastItems {
     {
         val list = ArrayList<TodayDataClass>()
         list.add(TodayDataClass.TodayHeaderClass("Palermo", "Sicilia", OffsetDateTime.now(), "Sunday 11 sep"))
-        list.add(TodayDataClass.TodayCardViewClass(11, 31,42, "2/5", 32,0))
+        list.add(TodayDataClass.TodayCardViewClass(11.4, 31.5,42.4, 2.5, 32,4.5))
         list.add(TodayDataClass.TodayHourlyClass(OffsetDateTime.now(), "suny", 31 , 0))
         list.add(TodayDataClass.TodayHourlyClass(OffsetDateTime.now(), "suny", 31 , 0))
         list.add(TodayDataClass.TodayHourlyClass(OffsetDateTime.now(), "suny", 31 , 0))

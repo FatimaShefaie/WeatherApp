@@ -12,12 +12,12 @@ sealed class TodayDataClass {
 
 
     data class TodayCardViewClass(
-        val feelsLike: Int,
-        val windSpeed: Int,
-        val humidity: Int,
-        val uvIndex: String,
+        val feelsLike: Double,
+        val windSpeed: Double,
+        val humidity: Double,
+        val uvIndex: Double,
         val cloudCover: Int,
-        val rainAmount: Int
+        val rainAmount: Double
     ) : TodayDataClass()
 
     data class TodayHourlyClass(

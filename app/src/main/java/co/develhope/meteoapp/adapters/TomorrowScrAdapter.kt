@@ -41,9 +41,9 @@ class TomorrowScrAdapter(private val newList: List<DailyScreenItems>) :
         fun bind(cardItems: DailyScreenItems.CardForecast) {
             tomCard.tvTomPrecipitationGrade.text = itemView.context.getString(
                 R.string.precipitation_grade, cardItems.precip)
-            tomCard.tvTomUvIndexTxt.text = itemView.context.getString(
-                R.string.uv_index, cardItems.index)
-            tomCard.tomHumidity.text = itemView.context.getString(
+            tomCard.tomUvIndex.text = itemView.context.getString(
+                R.string.tom_uv_index, cardItems.index)
+            tomCard.tomHumidityGrade.text = itemView.context.getString(
                 R.string.tom_hum_grade,cardItems.humidity)
             tomCard.tomWindSpeed.text = itemView.context.getString(
                 R.string.wind_speed, cardItems.wind)
@@ -58,12 +58,11 @@ class TomorrowScrAdapter(private val newList: List<DailyScreenItems>) :
     class TomHourlyViewHolder(private val tomHourly: TomHourlyItemBinding) :
         RecyclerView.ViewHolder(tomHourly.root) {
         fun bind(hourlyItems: DailyScreenItems.HourlyForecast) {
-            tomHourly.tom2Hour.text = itemView.context.getString(
-                R.string.hour,hourlyItems.hourlyForecast.date.hour)
+            tomHourly.tom2Hour.text = itemView.context.getString(R.string.hour,hourlyItems.hourlyForecast.date.hour)
             tomHourly.tom2IconMoon.setImageResource(
                 ForecastModel.setIcon(hourlyItems.hourlyForecast.weather))
-            tomHourly.tom2Grade.text = itemView.context.getString(
-                R.string.tom_grade, hourlyItems.hourlyForecast.temperature)
+            tomHourly.tom2Grade.text = itemView.context.getString(R.string.tom_grade,hourlyItems.hourlyForecast.temperature)
+
             tomHourly.tom2HumidityPercent.text = itemView.context.getString(R.string.humidity_percent,
                 hourlyItems.hourlyForecast.rainfall)
 

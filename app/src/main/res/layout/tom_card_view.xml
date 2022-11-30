@@ -31,7 +31,7 @@
         android:layout_marginStart="45dp"
         android:layout_marginBottom="24dp"
         android:contentDescription="@string/icon_holder"
-        android:src="@drawable/ic_fluent_moon"
+        android:src="@drawable/ic_sun"
         app:layout_constraintBottom_toTopOf="@+id/hourlyForecast_item"
         app:layout_constraintStart_toEndOf="@+id/tom_hour" />
 
@@ -138,6 +138,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/tom_uv_Index"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="198dp"
